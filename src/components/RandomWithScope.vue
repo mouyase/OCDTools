@@ -5,7 +5,7 @@
     <div>数据个数：<input v-model.number="ge_shu" type="number"/></div>
     <div>误差范围：<input v-model.number="wu_cha" type="number"/></div>
     <div>
-      <button @click="randomWithScome">拍</button>
+      <button @click="randomWithScome" id="pai">拍</button>
     </div>
     <div v-if="jie_guo.length > 0">
       <div>结果输出：</div>
@@ -80,4 +80,10 @@ export default {
 </script>
 
 <style scoped>
+#pai {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  margin: 16px;
+}
 </style>
